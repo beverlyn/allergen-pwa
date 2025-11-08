@@ -1,0 +1,102 @@
+{
+  "app": {
+    "name": "赤ちゃんアレルゲン記録",
+    "shortName": "アレルゲン記録"
+  },
+  "common": {
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "edit": "編集",
+    "confirm": "確認",
+    "back": "戻る",
+    "next": "次へ",
+    "done": "完了",
+    "today": "今日",
+    "daysAgo": "{{count}}日前",
+    "daysAgo_other": "{{count}}日前",
+    "notYetIntroduced": "未摂取"
+  },
+  "onboarding": {
+    "welcome": "ようこそ",
+    "intro": "赤ちゃんのアレルゲン導入を記録しましょう",
+    "babyName": "赤ちゃんの名前またはニックネーム",
+    "babyBirthdate": "誕生日",
+    "disclaimer": "このアプリは情報提供のみを目的としており、医学的アドバイスを提供するものではありません。アレルゲンの導入や管理については、必ず小児科医にご相談ください。",
+    "disclaimerAccept": "理解しました",
+    "notifications": "週次リマインダーを有効にしますか？",
+    "notificationsDesc": "アレルゲンが遅れている時に優しくお知らせします"
+  },
+  "allergen": {
+    "egg": "卵",
+    "dairy": "乳製品",
+    "soy": "大豆",
+    "wheat": "小麦",
+    "peanut": "ピーナッツ",
+    "treeNut": "ナッツ類",
+    "sesame": "ごま",
+    "fish": "魚",
+    "seafood": "海産物"
+  },
+  "feeding": {
+    "logFeeding": "食事を記録",
+    "date": "日付",
+    "amount": "量（任意）",
+    "amountPlaceholder": "例：大さじ2杯",
+    "reaction": "反応はありましたか？",
+    "reactionSeverity": "重症度",
+    "notes": "メモ（任意）",
+    "notesPlaceholder": "気づいたこと...",
+    "mild": "軽度",
+    "moderate": "中程度",
+    "severe": "重度",
+    "saved": "食事を記録しました",
+    "updated": "食事を更新しました",
+    "deleted": "食事を削除しました"
+  },
+  "history": {
+    "title": "履歴",
+    "allAllergens": "すべてのアレルゲン",
+    "filterBy": "アレルゲンで絞り込み",
+    "reactionsOnly": "反応のみ",
+    "noLogs": "まだ記録がありません",
+    "noLogsForAllergen": "このアレルゲンの記録が見つかりません",
+    "deleteConfirm": "この記録を削除してもよろしいですか？"
+  },
+  "settings": {
+    "title": "設定",
+    "babyProfile": "赤ちゃんプロフィール",
+    "name": "名前",
+    "birthdate": "誕生日",
+    "notifications": "通知",
+    "notificationsEnabled": "リマインダーを有効にする",
+    "thresholdDays": "リマインダー間隔",
+    "thresholdDaysUnit": "日",
+    "theme": "テーマ",
+    "light": "ライト",
+    "dark": "ダーク",
+    "language": "言語",
+    "english": "English",
+    "japanese": "日本語",
+    "data": "データ",
+    "exportCSV": "CSVにエクスポート",
+    "clearAllData": "すべてのデータを削除",
+    "clearConfirm": "DELETEと入力して確認",
+    "clearWarning": "すべてのデータが完全に削除されます。この操作は元に戻せません。",
+    "about": "について",
+    "version": "バージョン",
+    "privacy": "プライバシー：トラッキングなし、広告なし。データはあなたのデバイスにのみ保存されます。"
+  },
+  "empty": {
+    "main": "アレルゲンをタップして最初の食事を記録しましょう 🍽️",
+    "allUpToDate": "素晴らしい！すべてのアレルゲンを最近あげました ✅"
+  },
+  "errors": {
+    "required": "この項目は必須です",
+    "invalidDate": "無効な日付",
+    "futureDate": "未来の日付は指定できません",
+    "reactionSeverityRequired": "反応があった場合、重症度は必須です",
+    "exportFailed": "エクスポートに失敗しました。もう一度お試しください。",
+    "saveFailed": "保存に失敗しました。もう一度お試しください。"
+  }
+}

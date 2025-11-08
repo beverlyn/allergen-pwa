@@ -1,0 +1,102 @@
+{
+  "app": {
+    "name": "Baby Allergen Tracker",
+    "shortName": "Allergen Tracker"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done",
+    "today": "Today",
+    "daysAgo": "{{count}} day ago",
+    "daysAgo_other": "{{count}} days ago",
+    "notYetIntroduced": "Not yet introduced"
+  },
+  "onboarding": {
+    "welcome": "Welcome",
+    "intro": "Track allergen introduction for your baby",
+    "babyName": "Baby's name or nickname",
+    "babyBirthdate": "Baby's birthdate",
+    "disclaimer": "This app is for informational purposes only and does not provide medical advice. Always consult your pediatrician before introducing or managing food allergens.",
+    "disclaimerAccept": "I understand",
+    "notifications": "Enable weekly reminders?",
+    "notificationsDesc": "Get gentle reminders when an allergen is overdue"
+  },
+  "allergen": {
+    "egg": "Egg",
+    "dairy": "Dairy",
+    "soy": "Soy",
+    "wheat": "Wheat",
+    "peanut": "Peanut",
+    "treeNut": "Tree Nut",
+    "sesame": "Sesame",
+    "fish": "Fish",
+    "seafood": "Seafood"
+  },
+  "feeding": {
+    "logFeeding": "Log Feeding",
+    "date": "Date",
+    "amount": "Amount (optional)",
+    "amountPlaceholder": "e.g., 2 tablespoons",
+    "reaction": "Reaction?",
+    "reactionSeverity": "Severity",
+    "notes": "Notes (optional)",
+    "notesPlaceholder": "Any observations...",
+    "mild": "Mild",
+    "moderate": "Moderate",
+    "severe": "Severe",
+    "saved": "Feeding logged successfully",
+    "updated": "Feeding updated successfully",
+    "deleted": "Feeding deleted successfully"
+  },
+  "history": {
+    "title": "History",
+    "allAllergens": "All Allergens",
+    "filterBy": "Filter by allergen",
+    "reactionsOnly": "Reactions only",
+    "noLogs": "No feedings logged yet",
+    "noLogsForAllergen": "No feedings found for this allergen",
+    "deleteConfirm": "Are you sure you want to delete this feeding log?"
+  },
+  "settings": {
+    "title": "Settings",
+    "babyProfile": "Baby Profile",
+    "name": "Name",
+    "birthdate": "Birthdate",
+    "notifications": "Notifications",
+    "notificationsEnabled": "Enable reminders",
+    "thresholdDays": "Remind me after",
+    "thresholdDaysUnit": "days",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "language": "Language",
+    "english": "English",
+    "japanese": "日本語",
+    "data": "Data",
+    "exportCSV": "Export to CSV",
+    "clearAllData": "Clear All Data",
+    "clearConfirm": "Type DELETE to confirm",
+    "clearWarning": "This will permanently delete all your data. This cannot be undone.",
+    "about": "About",
+    "version": "Version",
+    "privacy": "Privacy: No tracking, no ads. Data stored only on your device."
+  },
+  "empty": {
+    "main": "Tap an allergen to log your first feeding 🍽️",
+    "allUpToDate": "Great job! All allergens fed recently ✅"
+  },
+  "errors": {
+    "required": "This field is required",
+    "invalidDate": "Invalid date",
+    "futureDate": "Date cannot be in the future",
+    "reactionSeverityRequired": "Reaction severity is required when reaction is reported",
+    "exportFailed": "Export failed. Please try again.",
+    "saveFailed": "Failed to save. Please try again."
+  }
+}
