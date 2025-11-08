@@ -1,0 +1,86 @@
+.calendar {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.calendar-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.calendar-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.calendar-day-name {
+  text-align: center;
+  font-weight: 600;
+  padding: 8px;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #fff;
+  position: relative;
+  cursor: default;
+}
+
+.calendar-day.has-entries {
+  cursor: pointer;
+  background-color: #f5f5f5;
+}
+
+.calendar-day.has-entries:hover {
+  background-color: #e8e8e8;
+  border-color: #646cff;
+}
+
+.calendar-day.empty {
+  border: none;
+  background-color: transparent;
+}
+
+.day-number {
+  font-size: 0.875rem;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.day-markers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.marker {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.marker.normal {
+  color: #646cff;
+}
+
+.marker.reaction {
+  color: #ff6b6b;
+}

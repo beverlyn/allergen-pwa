@@ -1,34 +1,70 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { AllergenHistory } from './components/AllergenHistory'
+import { AllergenEntry } from './types'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+// Sample data for demonstration
+const sampleEntries: AllergenEntry[] = [
+  {
+    id: '1',
+    allergen: 'Peanuts',
+    date: new Date(2025, 10, 5), // Nov 5, 2025
+    hadReaction: false,
+    notes: 'Small amount in smoothie'
+  },
+  {
+    id: '2',
+    allergen: 'Peanuts',
+    date: new Date(2025, 10, 7), // Nov 7, 2025
+    hadReaction: true,
+    notes: 'Hives appeared 30 minutes after eating'
+  },
+  {
+    id: '3',
+    allergen: 'Peanuts',
+    date: new Date(2025, 10, 3), // Nov 3, 2025
+    hadReaction: false,
+    notes: 'Peanut butter on toast'
+  },
+  {
+    id: '4',
+    allergen: 'Peanuts',
+    date: new Date(2025, 10, 10), // Nov 10, 2025
+    hadReaction: false,
+    notes: 'Mixed into oatmeal'
+  },
+  {
+    id: '5',
+    allergen: 'Peanuts',
+    date: new Date(2025, 10, 12), // Nov 12, 2025
+    hadReaction: false
+  },
+  {
+    id: '6',
+    allergen: 'Peanuts',
+    date: new Date(2025, 10, 15), // Nov 15, 2025
+    hadReaction: true,
+    notes: 'Mild skin reaction, consulted doctor'
+  },
+  {
+    id: '7',
+    allergen: 'Peanuts',
+    date: new Date(2025, 9, 28), // Oct 28, 2025
+    hadReaction: false,
+    notes: 'Started peanut introduction'
+  },
+  {
+    id: '8',
+    allergen: 'Peanuts',
+    date: new Date(2025, 9, 30), // Oct 30, 2025
+    hadReaction: false
+  }
+];
 
+function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="app">
+      <AllergenHistory allergen="Peanuts" entries={sampleEntries} />
+    </div>
   )
 }
 
