@@ -76,6 +76,22 @@ export const DEFAULT_ALLERGENS: Omit<Allergen, 'id' | 'createdAt' | 'modifiedAt'
   { type: 'seafood', name: 'Seafood', emoji: '🦐', paused: false },
 ]
 
+// Calendar view types
+export interface AllergenEntry {
+  id: string
+  allergen: string
+  hasReaction: boolean
+  reactionSeverity?: ReactionSeverity
+  notes?: string
+  time?: string
+}
+
+export interface AllergenDay {
+  date: string
+  entries: AllergenEntry[]
+  hasReaction: boolean
+}
+
 // Default settings
 export const DEFAULT_SETTINGS: Settings = {
   theme: 'light',

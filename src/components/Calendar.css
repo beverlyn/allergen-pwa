@@ -1,0 +1,91 @@
+.calendar {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.day-name {
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: #6b7280;
+  padding: 8px 0;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 14px;
+  position: relative;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+}
+
+.calendar-day.empty {
+  background: transparent;
+  border: none;
+}
+
+.calendar-day.has-entries {
+  cursor: pointer;
+  background: #eff6ff;
+  border-color: #3b82f6;
+}
+
+.calendar-day.has-entries:hover {
+  background: #dbeafe;
+  transform: scale(1.05);
+  transition: all 0.2s;
+}
+
+.calendar-day.selected {
+  background: #3b82f6;
+  color: white;
+  font-weight: 600;
+}
+
+.calendar-day.selected .day-marker {
+  color: white;
+}
+
+.day-number {
+  font-size: 16px;
+}
+
+.day-marker {
+  font-size: 18px;
+  margin-top: 2px;
+  color: #3b82f6;
+}
+
+.calendar-day.has-entries .day-marker {
+  color: #3b82f6;
+}
+
+/* Reaction marker (star) */
+.calendar-day.has-entries:has(.day-marker:contains('★')) {
+  border-color: #ef4444;
+  background: #fef2f2;
+}
+
+.calendar-day.has-entries .day-marker:first-child {
+  color: #ef4444;
+}
